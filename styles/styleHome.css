@@ -8,7 +8,7 @@ body {
 header {
     background-color: #333333;
     color: #ffffff;
-    padding: 20px 20px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,14 +19,36 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 header h1 {
-    margin: 0%;
+    margin: 0;
 }
 
 .logo {
-    width: 40px; /* Ajusta el tamaño del logo según tus necesidades */
+    width: 40px;
     height: auto;
     margin-right: 10px;
+}
+
+#introduccion {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px auto; /* Centra la introducción y la ajusta al ancho de la página */
+    max-width: 1200px; /* Establece un ancho máximo para la introducción */
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+}
+
+#introduccion h1 {
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+#introduccion p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 nav ul {
@@ -48,20 +70,26 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #2b98a0; /* Cambia el color al pasar el cursor */
+    color: #59dae4;
 }
 
 main {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos en el centro y separados uniformemente */
+    flex-wrap: wrap; /* Permitir que los elementos fluyan hacia abajo */
 }
 
 section {
     background-color: #ffffff;
     border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 20px;
+    margin: 20px;
+    padding: 30px;
+    flex: 1; /* Distribuye el espacio disponible de manera uniforme */
+    max-width: 300px; /* Limita el ancho de cada sección */
+    text-align: center; /* Centra el contenido */
 }
 
 section h2 {
@@ -84,14 +112,35 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
+    clear: both; /* Para limpiar el float */
 }
 
-/* Enlaces del pie de página */
-footer a {
-    color: #ffffff;
-    text-decoration: none;
+/* Contenedor para los elementos adicionales */
+#additional-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px; /* Espacio inferior */
 }
 
-footer a:hover {
-    text-decoration: underline;
+/* Estilos para el mapa */
+/* Estilos para el mapa */
+iframe {
+    border: 0;
+    border-radius: 5px;
+    width: calc(50% - 20px); /* Mitad del ancho del contenedor principal, descontando los márgenes */
+    height: 450px; /* Altura fija */
+    margin-right: 20px; /* Margen derecho para separar del otro elemento */
+    float: left; /* Alinear a la izquierda */
+}
+
+/* Estilos para el recuadro */
+#info-recuadro {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 5px;
+    margin: 20px;
+    width: calc(50% - 20px); /* Mitad del ancho del contenedor principal, descontando los márgenes */
+    box-sizing: border-box; /* Incluir el padding en el ancho */
+    float: left; /* Alinear a la izquierda */
 }
