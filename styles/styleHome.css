@@ -128,7 +128,7 @@ footer {
 iframe {
     border: 0;
     border-radius: 5px;
-    width: calc(50% - 20px); /* Mitad del ancho del contenedor principal, descontando los márgenes */
+    width: calc(50% + 2px); /* Mitad del ancho del contenedor principal, descontando los márgenes */
     height: 450px; /* Altura fija */
     margin-right: 20px; /* Margen derecho para separar del otro elemento */
     float: left; /* Alinear a la izquierda */
@@ -143,4 +143,10 @@ iframe {
     width: calc(50% - 20px); /* Mitad del ancho del contenedor principal, descontando los márgenes */
     box-sizing: border-box; /* Incluir el padding en el ancho */
     float: left; /* Alinear a la izquierda */
+}
+
+@media only screen and (max-width: 600px) {
+    #registration-box {
+        width: 90%;
+    }
 }
