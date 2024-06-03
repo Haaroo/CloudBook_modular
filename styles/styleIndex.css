@@ -8,7 +8,7 @@ body {
 header {
   background-color: #333333;
   color: #ffffff;
-  padding: 20px 20px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,24 +21,44 @@ header {
 }
 header h1 {
   margin: 0%;
+  text-decoration: none;
 }
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #59dae4;
+    text-decoration: none;
+}
+
+.cloudbooks-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cloudbooks-link:hover,
+.cloudbooks-link:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 
 .logo {
   width: 40px;
   height: auto;
   margin-right: 10px;
-  text-decoration: none;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 nav ul li {
   display: inline;
   margin-right: 20px;
+  text-decoration: none;
 }
 
 nav ul li a {
@@ -46,10 +66,6 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #59dae4;
 }
 
 .search-container {
@@ -112,4 +128,10 @@ footer {
   text-align: center;
   padding: 10px 0;
   clear: both; /* Para limpiar el float */
+}
+
+@media only screen and (max-width: 600px) {
+  #registration-box {
+      width: 90%;
+  }
 }
