@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin: 0%;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #59dae4;
+}
+
+.search-container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.search-container input[type=text] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 50%;
+  margin-right: 10px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333333;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #59dae4;
+}
+
+section#libros-disponibles {
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 30px;
+  max-width: 1200px;
+  text-align: center;
+}
+
+section#libros-disponibles h2 {
+  color: #333333;
+}
+
+.libro {
+  display: inline-block;
+  margin: 20px;
+}
+
+.libro img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.libro p {
+  color: #666666;
+}
+
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  clear: both; /* Para limpiar el float */
+}
