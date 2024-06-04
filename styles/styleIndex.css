@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
@@ -19,6 +20,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
 header h1 {
   margin: 0%;
   text-decoration: none;
@@ -26,8 +28,8 @@ header h1 {
 
 nav ul li a:hover,
 nav ul li a:focus {
-    color: #59dae4;
-    text-decoration: none;
+  color: #59dae4;
+  text-decoration: none;
 }
 
 .cloudbooks-link {
@@ -40,7 +42,6 @@ nav ul li a:focus {
   color: #ffffff;
   text-decoration: none;
 }
-
 
 .logo {
   width: 40px;
@@ -94,8 +95,9 @@ nav ul li a {
   background-color: #59dae4;
 }
 
-section#libros-disponibles {
-  background-color: #ffffff;
+/* Estilos de la sección de libros nuevos */
+#libros-nuevos {
+  background-color: #f8f8f8; /* Fondo gris claro */
   border-radius: 5px;
   margin: 20px auto;
   padding: 30px;
@@ -103,35 +105,198 @@ section#libros-disponibles {
   text-align: center;
 }
 
-section#libros-disponibles h2 {
+#libros-nuevos h2 {
   color: #333333;
 }
 
-.libro {
-  display: inline-block;
-  margin: 20px;
+#libros-nuevos {
+  background-color: #f8f8f8; /* Fondo gris claro */
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 30px;
+  max-width: 1200px;
+  text-align: center;
 }
 
-.libro img {
+#libros-nuevos h2 {
+  color: #333333;
+}
+
+#libros-nuevos .libros-container {
+  display: flex;
+  overflow-x: auto; /* Permitir desplazamiento horizontal */
+  -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
+  padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+#libros-nuevos .libro {
+  width: calc(20% - 40px); /* Ancho fijo para que haya 5 libros por fila */
+  margin: 0 20px; /* Espacio entre los libros */
+  text-align: center; /* Centrar el texto dentro del libro */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+#libros-nuevos .libro:hover {
+  transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+}
+
+#libros-nuevos .libro img {
   max-width: 100%;
   height: auto;
+  border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+#libros-nuevos .libro p {
+  color: #333;
+  font-size: 14px;
+  margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilos de la sección de libros de terror */
+#libros-terror {
+  background-color: #f8f8f8; /* Fondo gris claro */
   border-radius: 5px;
+  margin: 20px auto;
+  padding: 30px;
+  max-width: 1200px;
+  text-align: center;
 }
 
-.libro p {
-  color: #666666;
+#libros-terror h2 {
+  color: #333333;
 }
 
+#libros-terror .libros-container {
+  display: flex;
+  overflow-x: auto; /* Permitir desplazamiento horizontal */
+  -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
+  padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+#libros-terror .libro {
+  width: calc(20% - 40px); /* Ancho fijo para que haya 5 libros por fila */
+  margin: 0 20px; /* Espacio entre los libros */
+  text-align: center; /* Centrar el texto dentro del libro */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+#libros-terror .libro:hover {
+  transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+}
+
+#libros-terror .libro img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+#libros-terror .libro p {
+  color: #333;
+  font-size: 14px;
+  margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilos de la sección de libros infantiles */
+#libros-infantiles {
+  background-color: #f8f8f8; /* Fondo gris claro */
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 30px;
+  max-width: 1200px;
+  text-align: center;
+}
+
+#libros-infantiles h2 {
+  color: #333333;
+}
+
+#libros-infantiles .libros-container {
+  display: flex;
+  overflow-x: auto; /* Permitir desplazamiento horizontal */
+  -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
+  padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+#libros-infantiles .libro {
+  width: calc(20% - 40px); /* Ancho fijo para que haya 5 libros por fila */
+  margin: 0 20px; /* Espacio entre los libros */
+  text-align: center; /* Centrar el texto dentro del libro */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+#libros-infantiles .libro:hover {
+  transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+}
+
+#libros-infantiles .libro img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+#libros-infantiles .libro p {
+  color: #333;
+  font-size: 14px;
+  margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilos de libros de ciencia */
+
+#libros-ciencia {
+  background-color: #f8f8f8; /* Fondo gris claro */
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 30px;
+  max-width: 1200px;
+  text-align: center;
+}
+
+#libros-ciencia h2 {
+  color: #333333;
+}
+
+#libros-ciencia .libros-container {
+  display: flex;
+  overflow-x: auto; /* Permitir desplazamiento horizontal */
+  -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
+  padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+#libros-ciencia .libro {
+  width: calc(20% - 40px); /* Ancho fijo para que haya 5 libros por fila */
+  margin: 0 20px; /* Espacio entre los libros */
+  text-align: center; /* Centrar el texto dentro del libro */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+#libros-ciencia .libro:hover {
+  transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+}
+
+#libros-ciencia .libro img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+#libros-ciencia .libro p {
+  color: #333;
+  font-size: 14px;
+  margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilos del footer */
 footer {
   background-color: #333333;
   color: #ffffff;
   text-align: center;
   padding: 10px 0;
-  clear: both; /* Para limpiar el float */
-}
-
-@media only screen and (max-width: 600px) {
-  #registration-box {
-      width: 90%;
-  }
 }
