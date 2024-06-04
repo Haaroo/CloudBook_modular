@@ -101,20 +101,7 @@ nav ul li a {
   border-radius: 5px;
   margin: 20px auto;
   padding: 30px;
-  max-width: 1200px;
-  text-align: center;
-}
-
-#libros-nuevos h2 {
-  color: #333333;
-}
-
-#libros-nuevos {
-  background-color: #f8f8f8; /* Fondo gris claro */
-  border-radius: 5px;
-  margin: 20px auto;
-  padding: 30px;
-  max-width: 1200px;
+  max-width: 1400px; /* Cambia este valor según lo que necesites */
   text-align: center;
 }
 
@@ -160,7 +147,7 @@ nav ul li a {
   border-radius: 5px;
   margin: 20px auto;
   padding: 30px;
-  max-width: 1200px;
+  max-width: 1400px; /* Cambia este valor según lo que necesites */
   text-align: center;
 }
 
@@ -206,7 +193,7 @@ nav ul li a {
   border-radius: 5px;
   margin: 20px auto;
   padding: 30px;
-  max-width: 1200px;
+  max-width: 1400px; /* Cambia este valor según lo que necesites */
   text-align: center;
 }
 
@@ -247,13 +234,12 @@ nav ul li a {
 }
 
 /* Estilos de libros de ciencia */
-
 #libros-ciencia {
   background-color: #f8f8f8; /* Fondo gris claro */
   border-radius: 5px;
   margin: 20px auto;
   padding: 30px;
-  max-width: 1200px;
+  max-width: 1400px; /* Cambia este valor según lo que necesites */
   text-align: center;
 }
 
