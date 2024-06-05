@@ -1,7 +1,22 @@
-const librosNuevosContainer = document.querySelector('#libros-nuevos .libros-container');
-const librosTerrorContainer = document.querySelector('#libros-terror .libros-container');
-const librosInfantilesContainer = document.querySelector('#libros-infantiles .libros-container');
-const librosCienciaContainer = document.querySelector('#libros-ciencia .libros-container');
+const librosNuevosContainer = document.querySelector('#libros-nuevos .libros-container-nuevos');
+const librosTerrorContainer = document.querySelector('#libros-terror .libros-container-terror');
+const librosInfantilesContainer = document.querySelector('#libros-infantiles .libros-container-infantiles');
+const librosCienciaContainer = document.querySelector('#libros-ciencia .libros-container-ciencia');
+const librosProgramacionContainer = document.querySelector('#libros-programacion .libros-container-programacion');
+
+async function obtenerLibrosProgramacion() {
+    try {
+        const response = await fetch('https://www.googleapis.com/books/v1/volumes?q=subject:programming&maxResults=5');
+        if (!response.ok) {
+            throw new Error('No se pudo obtener la información de los libros adaptados a películas');
+        }
+        const data = await response.json();
+        return data.items;
+    } catch (error) {
+        console.error('Error al obtener los libros adaptados a películas:', error);
+        return [];
+    }
+}
 
 async function obtenerLibrosNuevos() {
     try {
@@ -87,6 +102,9 @@ async function iniciar() {
 
     const librosCiencia = await obtenerLibrosCiencia();
     mostrarLibros(librosCiencia, librosCienciaContainer);
+
+    const librosProgramacion = await obtenerLibrosProgramacion();
+    mostrarLibros(librosProgramacion, librosProgramacionContainer);
 }
 
 iniciar();

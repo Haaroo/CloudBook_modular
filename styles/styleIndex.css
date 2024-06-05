@@ -95,13 +95,83 @@ nav ul li a {
   background-color: #59dae4;
 }
 
+/* Estilos de la pantalla modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  max-width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.libros-container-search {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Alinear los libros al centro */
+  margin-top: 20px;
+}
+
+.libro {
+  width: 200px; /* Ancho fijo para cada libro */
+  margin: 20px; /* Espacio entre los libros */
+  text-align: center; /* Centrar el texto dentro del libro */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+.libro:hover {
+  transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+}
+
+.libro img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+.libro p {
+  color: #333;
+  font-size: 14px;
+  margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilos de los contenedores individuales */
+
 /* Estilos de la sección de libros nuevos */
 #libros-nuevos {
   background-color: #f8f8f8; /* Fondo gris claro */
   border-radius: 5px;
   margin: 20px auto;
   padding: 30px;
-  max-width: 1400px; /* Cambia este valor según lo que necesites */
+  max-width: 1200px;
   text-align: center;
 }
 
@@ -109,7 +179,20 @@ nav ul li a {
   color: #333333;
 }
 
-#libros-nuevos .libros-container {
+#libros-nuevos {
+  background-color: #f8f8f8; /* Fondo gris claro */
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 30px;
+  max-width: 1200px;
+  text-align: center;
+}
+
+#libros-nuevos h2 {
+  color: #333333;
+}
+
+#libros-nuevos .libros-container-nuevos {
   display: flex;
   overflow-x: auto; /* Permitir desplazamiento horizontal */
   -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
@@ -142,12 +225,13 @@ nav ul li a {
 }
 
 /* Estilos de la sección de libros de terror */
+
 #libros-terror {
   background-color: #f8f8f8; /* Fondo gris claro */
   border-radius: 5px;
   margin: 20px auto;
   padding: 30px;
-  max-width: 1400px; /* Cambia este valor según lo que necesites */
+  max-width: 1200px;
   text-align: center;
 }
 
@@ -155,7 +239,7 @@ nav ul li a {
   color: #333333;
 }
 
-#libros-terror .libros-container {
+#libros-terror .libros-container-terror {
   display: flex;
   overflow-x: auto; /* Permitir desplazamiento horizontal */
   -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
@@ -193,7 +277,7 @@ nav ul li a {
   border-radius: 5px;
   margin: 20px auto;
   padding: 30px;
-  max-width: 1400px; /* Cambia este valor según lo que necesites */
+  max-width: 1200px;
   text-align: center;
 }
 
@@ -201,7 +285,7 @@ nav ul li a {
   color: #333333;
 }
 
-#libros-infantiles .libros-container {
+#libros-infantiles .libros-container-infantiles {
   display: flex;
   overflow-x: auto; /* Permitir desplazamiento horizontal */
   -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
@@ -234,12 +318,13 @@ nav ul li a {
 }
 
 /* Estilos de libros de ciencia */
+
 #libros-ciencia {
   background-color: #f8f8f8; /* Fondo gris claro */
   border-radius: 5px;
   margin: 20px auto;
   padding: 30px;
-  max-width: 1400px; /* Cambia este valor según lo que necesites */
+  max-width: 1200px;
   text-align: center;
 }
 
@@ -247,7 +332,7 @@ nav ul li a {
   color: #333333;
 }
 
-#libros-ciencia .libros-container {
+#libros-ciencia .libros-container-ciencia {
   display: flex;
   overflow-x: auto; /* Permitir desplazamiento horizontal */
   -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
@@ -274,6 +359,53 @@ nav ul li a {
 }
 
 #libros-ciencia .libro p {
+  color: #333;
+  font-size: 14px;
+  margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilos de libros de programacion */
+
+#libros-programacion {
+  background-color: #f8f8f8; /* Fondo gris claro */
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 30px;
+  max-width: 1200px;
+  text-align: center;
+}
+
+#libros-programacion h2 {
+  color: #333333;
+}
+
+#libros-programacion .libros-container-programacion {
+  display: flex;
+  overflow-x: auto; /* Permitir desplazamiento horizontal */
+  -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
+  padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+#libros-programacion .libro {
+  width: calc(20% - 40px); /* Ancho fijo para que haya 5 libros por fila */
+  margin: 0 20px; /* Espacio entre los libros */
+  text-align: center; /* Centrar el texto dentro del libro */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+#libros-programacion .libro:hover {
+  transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+}
+
+#libros-programacion .libro img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+#libros-programacion .libro p {
   color: #333;
   font-size: 14px;
   margin-top: 10px; /* Espacio entre la imagen y el texto */
