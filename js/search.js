@@ -1,14 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('searchInput');
-    const searchButton = document.getElementById('searchButton');
     const modal = document.getElementById('modal');
-    const modalContent = document.querySelector('.modal-content');
     const closeModalButton = document.querySelector('.close');
 
-    searchButton.addEventListener('click', () => {
-        let query = searchInput.value.trim(); // Recortar espacios en blanco al principio y al final
+    searchInput.addEventListener('input', () => { // Cambio aquí
+        let query = searchInput.value.trim(); 
         if (query !== '') {
-            query = encodeURIComponent(query); // Codificar las palabras de búsqueda
+            query = encodeURIComponent(query); 
             fetchBooks(query);
         }
     });
