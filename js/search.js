@@ -49,6 +49,26 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.style.display = 'block';
     }
 
+    function displayResults(books) {
+        const librosContainer = document.querySelector('.libros-container-search');
+        librosContainer.innerHTML = '';
+        books.forEach(book => {
+            const divLibro = document.createElement('div');
+            divLibro.classList.add('libro');
+            const imagen = document.createElement('img');
+            imagen.src = book.volumeInfo.imageLinks.thumbnail;
+            imagen.alt = book.volumeInfo.title;
+            const parrafo = document.createElement('p');
+            parrafo.textContent = `${book.volumeInfo.title} - ${book.volumeInfo.authors ? book.volumeInfo.authors.join(', ') : 'Autor desconocido'}`;
+            divLibro.appendChild(imagen);
+            divLibro.appendChild(parrafo);
+            divLibro.addEventListener('click', function() {
+                abrirPaginaDetalle(book.volumeInfo.previewLink);
+            });
+            librosContainer.appendChild(divLibro);
+        });
+    }
+
     closeModalButton.addEventListener('click', () => {
         modal.style.display = 'none';
     });

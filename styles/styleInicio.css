@@ -1,0 +1,307 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    background-image: url('image/fondo_inicio.jpg');
+  }
+  
+  header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0%;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a:focus {
+    color: #59dae4;
+    text-decoration: none;
+  }
+  
+  .cloudbooks-link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .cloudbooks-link:hover,
+  .cloudbooks-link:focus {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+
+/* Sección de introducción */
+#introduccion {
+    background-color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 1225px;
+}
+
+#introduccion h1 {
+    color: #333333;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#introduccion p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.libro {
+    width: 200px; /* Ancho fijo para cada libro */
+    margin: 20px; /* Espacio entre los libros */
+    text-align: center; /* Centrar el texto dentro del libro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+  }
+  
+  .libro:hover {
+    transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+  }
+  
+  .libro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+  }
+  
+  .libro p {
+    color: #333;
+    font-size: 14px;
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+  }
+
+  /* SECCION LIBROS NOVEDAD */
+
+#libros-destacado {
+    background-color: #f8f8f8; /* Fondo gris claro */
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  #libros-destacado h2 {
+    color: #333333;
+  }
+  
+  #libros-destacado {
+    background-color: #f8f8f8; /* Fondo gris claro */
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  #libros-destacado h2 {
+    color: #333333;
+  }
+
+  #libros-destacado .libro-container-destacado {
+    display: flex;
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
+    padding: 20px 0; /* Espaciado superior e inferior */
+  }
+  
+  #libros-destacado .libro {
+    width: calc(20% - 40px); /* Ancho fijo para que haya 5 libros por fila */
+    margin: 0 20px; /* Espacio entre los libros */
+    text-align: center; /* Centrar el texto dentro del libro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+  }
+  
+  #libros-destacado .libro:hover {
+    transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+  }
+  
+  #libros-destacado .libro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+  }
+  
+  #libros-destacado .libro p {
+    color: #333;
+    font-size: 14px;
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+  }
+
+/* SECCION LIBROS NOVEDADES */
+
+#libros-novedades {
+    background-color: #f8f8f8; /* Fondo gris claro */
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  #libros-novedades h2 {
+    color: #333333;
+  }
+  
+  #libros-novedades {
+    background-color: #f8f8f8; /* Fondo gris claro */
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  #libros-novedades h2 {
+    color: #333333;
+  }
+
+  #libros-novedades .libro-container-novedades {
+    display: flex;
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
+    padding: 20px 0; /* Espaciado superior e inferior */
+  }
+  
+  #libros-novedades .libro {
+    width: calc(20% - 40px); /* Ancho fijo para que haya 5 libros por fila */
+    margin: 0 20px; /* Espacio entre los libros */
+    text-align: center; /* Centrar el texto dentro del libro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+  }
+  
+  #libros-novedades .libro:hover {
+    transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+  }
+  
+  #libros-novedades .libro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+  }
+  
+  #libros-novedades .libro p {
+    color: #333;
+    font-size: 14px;
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+  }
+
+  /* SECCION LIBROS DESTACADOS */
+
+#libros-autores {
+    background-color: #f8f8f8; /* Fondo gris claro */
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  #libros-autores h2 {
+    color: #333333;
+  }
+  
+  #libros-autores {
+    background-color: #f8f8f8; /* Fondo gris claro */
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  #libros-autores h2 {
+    color: #333333;
+  }
+
+  #libros-autores .libro-container-autores {
+    display: flex;
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
+    padding: 20px 0; /* Espaciado superior e inferior */
+  }
+  
+  #libros-autores .libro {
+    width: calc(20% - 40px); /* Ancho fijo para que haya 5 libros por fila */
+    margin: 0 20px; /* Espacio entre los libros */
+    text-align: center; /* Centrar el texto dentro del libro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+  }
+  
+  #libros-autores .libro:hover {
+    transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+  }
+  
+  #libros-autores .libro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+  }
+  
+  #libros-autores .libro p {
+    color: #333;
+    font-size: 14px;
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+  }
+
+  footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
