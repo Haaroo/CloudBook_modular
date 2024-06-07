@@ -59,7 +59,7 @@ body {
   
   nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 25px;
     text-decoration: none;
   }
   
@@ -70,6 +70,74 @@ body {
     transition: color 0.3s ease;
   }
   
+/* Estilos para el icono de usuario */
+.user-menu {
+  position: relative;
+  display: inline-block; /* Para que el icono de usuario tenga dimensiones */
+}
+
+/* Estilos para el icono de usuario */
+.user-menu #user-icon {
+  display: inline-block;
+  cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+}
+
+/* Estilos para el submenú */
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra suave para el submenú */
+  border-radius: 8px; /* Bordes redondeados */
+  z-index: 1;
+  top: calc(100% + 10px); /* Alinea el submenú debajo del icono de usuario */
+  left: 0; /* Alinea el submenú con el borde izquierdo del icono de usuario */
+  min-width: 160px; /* Ancho mínimo del submenú */
+  opacity: 0;
+  transform: translateY(-10px); /* Mover ligeramente hacia arriba */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Transición suave para la opacidad y la transformación */
+}
+
+/* Muestra el submenú */
+.user-menu.active .sub-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos para los elementos del submenú */
+.sub-menu li {
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color al pasar el ratón */
+}
+
+.sub-menu li a {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px; /* Espacio interior */
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color al pasar el ratón */
+  flex: 1;
+}
+
+/* Estilos para los iconos en el submenú */
+.sub-menu li a i {
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+  font-size: 16px; /* Tamaño del icono */
+}
+
+/* Cambia el color de fondo al pasar el ratón por los elementos del submenú */
+.sub-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Cambia el color del texto al pasar el ratón por los elementos del submenú */
+.sub-menu li a:hover {
+  color: #000; /* Cambia el color del texto al pasar el ratón */
+}
+
 
 /* Sección de introducción */
 #introduccion {
@@ -121,7 +189,7 @@ body {
   /* SECCION LIBROS NOVEDAD */
 
 #libros-destacado {
-    background-color: #f8f8f8; /* Fondo gris claro */
+    background-color: #ffffff; /* Fondo gris claro */
     border-radius: 5px;
     margin: 20px auto;
     padding: 30px;
@@ -134,7 +202,7 @@ body {
   }
   
   #libros-destacado {
-    background-color: #f8f8f8; /* Fondo gris claro */
+    background-color: #ffffff; /* Fondo gris claro */
     border-radius: 5px;
     margin: 20px auto;
     padding: 30px;
@@ -181,7 +249,7 @@ body {
 /* SECCION LIBROS NOVEDADES */
 
 #libros-novedades {
-    background-color: #f8f8f8; /* Fondo gris claro */
+    background-color: #ffffff; /* Fondo gris claro */
     border-radius: 5px;
     margin: 20px auto;
     padding: 30px;
@@ -194,7 +262,7 @@ body {
   }
   
   #libros-novedades {
-    background-color: #f8f8f8; /* Fondo gris claro */
+    background-color: #ffffff; /* Fondo gris claro */
     border-radius: 5px;
     margin: 20px auto;
     padding: 30px;
@@ -241,7 +309,7 @@ body {
   /* SECCION LIBROS DESTACADOS */
 
 #libros-autores {
-    background-color: #f8f8f8; /* Fondo gris claro */
+    background-color: #ffffff; /* Fondo gris claro */
     border-radius: 5px;
     margin: 20px auto;
     padding: 30px;
@@ -254,7 +322,7 @@ body {
   }
   
   #libros-autores {
-    background-color: #f8f8f8; /* Fondo gris claro */
+    background-color: #ffffff; /* Fondo gris claro */
     border-radius: 5px;
     margin: 20px auto;
     padding: 30px;
