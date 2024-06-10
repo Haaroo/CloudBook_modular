@@ -45,18 +45,18 @@ header h1 {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-bottom: 5px; /* Ajusta el espacio entre el icono y el borde inferior */
-    margin-right: 5px; /* Ajusta el espacio entre el icono y el borde derecho */
+    margin-bottom: 5px; 
+    margin-right: 5px; 
 }
 
 .logout-icon i {
     color: #ffffff;
     font-size: 24px;
-    transition: color 0.3s; /* Agrega una transición para suavizar el cambio de color */
+    transition: color 0.3s; 
 }
 
 .logout-icon i:hover {
-    color: #4e9aec; /* Cambia el color a azul al pasar el cursor sobre el icono */
+    color: #4e9aec; 
 }
 
 
@@ -85,5 +85,5 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
-    clear: both; /* Para limpiar el float */
+    clear: both; 
 }

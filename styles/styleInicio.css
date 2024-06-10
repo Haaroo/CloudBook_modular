@@ -69,16 +69,16 @@ body {
     transition: color 0.3s ease;
   }
   
-/* Estilos para el icono de usuario */
+
 .user-menu {
   position: relative;
-  display: inline-block; /* Para que el icono de usuario tenga dimensiones */
+  display: inline-block; 
 }
 
 /* Estilos para el icono de usuario */
 .user-menu #user-icon {
   display: inline-block;
-  cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+  cursor: pointer; 
 }
 
 /* Estilos para el submenú */
@@ -86,15 +86,15 @@ body {
   display: none;
   position: absolute;
   background-color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra suave para el submenú */
-  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+  border-radius: 8px; 
   z-index: 1;
-  top: calc(100% + 10px); /* Alinea el submenú debajo del icono de usuario */
-  left: 0; /* Alinea el submenú con el borde izquierdo del icono de usuario */
-  min-width: 160px; /* Ancho mínimo del submenú */
+  top: calc(100% + 10px); 
+  left: 0; 
+  min-width: 160px; 
   opacity: 0;
-  transform: translateY(-10px); /* Mover ligeramente hacia arriba */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Transición suave para la opacidad y la transformación */
+  transform: translateY(-10px); 
+  transition: opacity 0.3s ease, transform 0.3s ease; 
 }
 
 /* Muestra el submenú */
@@ -109,35 +109,32 @@ body {
 .sub-menu li {
   display: flex;
   align-items: center;
-  transition: background-color 0.3s ease; /* Transición suave para el cambio de color al pasar el ratón */
+  transition: background-color 0.3s ease; 
 }
 
 .sub-menu li a {
   display: flex;
   align-items: center;
-  padding: 12px 16px; /* Espacio interior */
+  padding: 12px 16px; 
   text-decoration: none;
   color: #333;
-  transition: background-color 0.3s ease; /* Transición suave para el cambio de color al pasar el ratón */
+  transition: background-color 0.3s ease; 
   flex: 1;
 }
 
 /* Estilos para los iconos en el submenú */
 .sub-menu li a i {
-  margin-right: 8px; /* Espacio entre el icono y el texto */
-  font-size: 16px; /* Tamaño del icono */
+  margin-right: 8px; 
+  font-size: 16px; 
 }
 
-/* Cambia el color de fondo al pasar el ratón por los elementos del submenú */
 .sub-menu li:hover {
   background-color: #f0f0f0;
 }
 
-/* Cambia el color del texto al pasar el ratón por los elementos del submenú */
 .sub-menu li a:hover {
-  color: #000; /* Cambia el color del texto al pasar el ratón */
+  color: #000;
 }
-
 
 /* Sección de introducción */
 #introduccion {
@@ -162,34 +159,34 @@ body {
 }
 
 .libro {
-    width: 200px; /* Ancho fijo para cada libro */
-    margin: 20px; /* Espacio entre los libros */
-    text-align: center; /* Centrar el texto dentro del libro */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    border-radius: 8px; /* Bordes redondeados */
-    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+    width: 200px; 
+    margin: 20px; 
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    transition: transform 0.3s ease; 
   }
   
   .libro:hover {
-    transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+    transform: translateY(-5px); 
   }
   
   .libro img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+    border-radius: 8px 8px 0 0; 
   }
   
   .libro p {
     color: #333;
     font-size: 14px;
-    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    margin-top: 10px; 
   }
 
   /* SECCION LIBROS NOVEDAD */
 
 #libros-destacado {
-    background-color: #ffffff; /* Fondo gris claro */
+    background-color: #ffffff; 
     border-radius: 5px;
     margin: 20px auto;
     padding: 30px;
@@ -202,7 +199,7 @@ body {
   }
   
   #libros-destacado {
-    background-color: #ffffff; /* Fondo gris claro */
+    background-color: #ffffff; 
     border-radius: 5px;
     margin: 20px auto;
     padding: 30px;
@@ -216,40 +213,40 @@ body {
 
   #libros-destacado .libro-container-destacado {
     display: flex;
-    overflow-x: auto; /* Permitir desplazamiento horizontal */
-    -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
-    padding: 20px 0; /* Espaciado superior e inferior */
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+    padding: 20px 0; 
   }
   
   #libros-destacado .libro {
-    width: calc(20% - 40px); /* Ancho fijo para que haya 5 libros por fila */
-    margin: 0 20px; /* Espacio entre los libros */
-    text-align: center; /* Centrar el texto dentro del libro */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    border-radius: 8px; /* Bordes redondeados */
-    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+    width: calc(20% - 40px); 
+    margin: 0 20px; 
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    transition: transform 0.3s ease; 
   }
   
   #libros-destacado .libro:hover {
-    transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+    transform: translateY(-5px); 
   }
   
   #libros-destacado .libro img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+    border-radius: 8px 8px 0 0; 
   }
   
   #libros-destacado .libro p {
     color: #333;
     font-size: 14px;
-    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    margin-top: 10px; 
   }
 
 /* SECCION LIBROS NOVEDADES */
 
 #libros-novedades {
-    background-color: #ffffff; /* Fondo gris claro */
+    background-color: #ffffff; 
     border-radius: 5px;
     margin: 20px auto;
     padding: 30px;
@@ -262,7 +259,7 @@ body {
   }
   
   #libros-novedades {
-    background-color: #ffffff; /* Fondo gris claro */
+    background-color: #ffffff; 
     border-radius: 5px;
     margin: 20px auto;
     padding: 30px;
@@ -276,40 +273,40 @@ body {
 
   #libros-novedades .libro-container-novedades {
     display: flex;
-    overflow-x: auto; /* Permitir desplazamiento horizontal */
-    -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
-    padding: 20px 0; /* Espaciado superior e inferior */
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+    padding: 20px 0; 
   }
   
   #libros-novedades .libro {
-    width: calc(20% - 40px); /* Ancho fijo para que haya 5 libros por fila */
-    margin: 0 20px; /* Espacio entre los libros */
-    text-align: center; /* Centrar el texto dentro del libro */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    border-radius: 8px; /* Bordes redondeados */
-    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+    width: calc(20% - 40px); 
+    margin: 0 20px; 
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    transition: transform 0.3s ease; 
   }
   
   #libros-novedades .libro:hover {
-    transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+    transform: translateY(-5px); 
   }
   
   #libros-novedades .libro img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+    border-radius: 8px 8px 0 0; 
   }
   
   #libros-novedades .libro p {
     color: #333;
     font-size: 14px;
-    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    margin-top: 10px; 
   }
 
   /* SECCION LIBROS DESTACADOS */
 
 #libros-autores {
-    background-color: #ffffff; /* Fondo gris claro */
+    background-color: #ffffff; 
     border-radius: 5px;
     margin: 20px auto;
     padding: 30px;
@@ -322,7 +319,7 @@ body {
   }
   
   #libros-autores {
-    background-color: #ffffff; /* Fondo gris claro */
+    background-color: #ffffff;
     border-radius: 5px;
     margin: 20px auto;
     padding: 30px;
@@ -336,34 +333,34 @@ body {
 
   #libros-autores .libro-container-autores {
     display: flex;
-    overflow-x: auto; /* Permitir desplazamiento horizontal */
-    -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
-    padding: 20px 0; /* Espaciado superior e inferior */
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+    padding: 20px 0; 
   }
   
   #libros-autores .libro {
-    width: calc(20% - 40px); /* Ancho fijo para que haya 5 libros por fila */
-    margin: 0 20px; /* Espacio entre los libros */
-    text-align: center; /* Centrar el texto dentro del libro */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    border-radius: 8px; /* Bordes redondeados */
-    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+    width: calc(20% - 40px); 
+    margin: 0 20px; 
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    transition: transform 0.3s ease; 
   }
   
   #libros-autores .libro:hover {
-    transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+    transform: translateY(-5px); 
   }
   
   #libros-autores .libro img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+    border-radius: 8px 8px 0 0; 
   }
   
   #libros-autores .libro p {
     color: #333;
     font-size: 14px;
-    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    margin-top: 10px; 
   }
 
   footer {

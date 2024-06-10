@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles del Libro</title>
     <style>
-        /* Estilos CSS para detalles del libro */
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -23,16 +22,14 @@
     <p id="autor"></p>
     <p id="descripcion"></p>
     <script>
-        // Obtener parámetros de la URL
         const urlParams = new URLSearchParams(window.location.search);
         const titulo = urlParams.get('titulo');
         const autor = urlParams.get('autor');
         const descripcion = urlParams.get('descripcion');
-
-        // Actualizar el contenido HTML con los detalles del libro
         document.getElementById('titulo').innerText = titulo;
         document.getElementById('autor').innerText = `Autor: ${autor}`;
         document.getElementById('descripcion').innerText = `Descripción: ${descripcion}`;
     </script>
 </body>
 </html>
+

@@ -3,6 +3,7 @@ const librosNovedadContainer = document.querySelector('#libros-novedades .libro-
 const librosAutoresContainer = document.querySelector('#libros-autores .libro-container-autores');
 
 
+//Funcion para obtener los libros destacados del modulo de Inicio
 async function obtenerLibrosDestacado() {
     try {
         const response = await fetch('https://www.googleapis.com/books/v1/volumes?q=guadalajara&maxResults=5');
@@ -17,6 +18,7 @@ async function obtenerLibrosDestacado() {
     }
 }
 
+//Funcion para obtener los libros de novedad del modulo de Inicio
 async function obtenerLibrosNovedad() {
     try {
         const response = await fetch('https://www.googleapis.com/books/v1/volumes?q=guadalajara&maxResults=5&orderBy=newest');
@@ -31,6 +33,7 @@ async function obtenerLibrosNovedad() {
     }
 }
 
+//Funcion para obtener los libros de autores del modulo de Inicio
 async function obtenerLibrosAutores() {
     try {
         const response = await fetch('https://www.googleapis.com/books/v1/volumes?q=author:mexican&maxResults=5')
@@ -77,22 +80,3 @@ async function iniciar() {
 }
 
 iniciar();
-
-document.addEventListener("DOMContentLoaded", function() {
-    var userIcon = document.getElementById("user-icon");
-    var userMenu = document.querySelector(".user-menu");
-
-    userIcon.addEventListener("click", function(event) {
-        // Si el submenú está activo, lo desactiva; si no, lo activa
-        userMenu.classList.toggle("active");
-        event.stopPropagation(); // Evita que el clic se propague a los elementos padre
-    });
-
-    // Cierra el submenú si se hace clic en cualquier lugar fuera de él
-    document.addEventListener("click", function(event) {
-        var isClickInside = userIcon.contains(event.target) || userMenu.contains(event.target);
-        if (!isClickInside) {
-            userMenu.classList.remove("active");
-        }
-    });
-});

@@ -71,13 +71,12 @@ nav ul li a {
 
 .user-menu {
   position: relative;
-  display: inline-block; /* Para que el icono de usuario tenga dimensiones */
+  display: inline-block; 
 }
 
-/* Estilos para el icono de usuario */
 .user-menu #user-icon {
   display: inline-block;
-  cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+  cursor: pointer; 
 }
 
 /* Estilos para el submenú */
@@ -85,15 +84,15 @@ nav ul li a {
   display: none;
   position: absolute;
   background-color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra suave para el submenú */
-  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+  border-radius: 8px; 
   z-index: 1;
-  top: calc(100% + 10px); /* Alinea el submenú debajo del icono de usuario */
-  left: 0; /* Alinea el submenú con el borde izquierdo del icono de usuario */
-  min-width: 160px; /* Ancho mínimo del submenú */
+  top: calc(100% + 10px); 
+  left: 0; 
+  min-width: 160px; 
   opacity: 0;
-  transform: translateY(-10px); /* Mover ligeramente hacia arriba */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Transición suave para la opacidad y la transformación */
+  transform: translateY(-10px); 
+  transition: opacity 0.3s ease, transform 0.3s ease; 
 }
 
 /* Muestra el submenú */
@@ -104,39 +103,35 @@ nav ul li a {
   left: -170px;
 }
 
-/* Estilos para los elementos del submenú */
 .sub-menu li {
   display: flex;
   align-items: center;
-  transition: background-color 0.3s ease; /* Transición suave para el cambio de color al pasar el ratón */
+  transition: background-color 0.3s ease; 
 }
 
 .sub-menu li a {
   display: flex;
   align-items: center;
-  padding: 12px 16px; /* Espacio interior */
+  padding: 12px 16px; 
   text-decoration: none;
   color: #333;
-  transition: background-color 0.3s ease; /* Transición suave para el cambio de color al pasar el ratón */
+  transition: background-color 0.3s ease; 
   flex: 1;
 }
 
 /* Estilos para los iconos en el submenú */
 .sub-menu li a i {
-  margin-right: 8px; /* Espacio entre el icono y el texto */
-  font-size: 16px; /* Tamaño del icono */
+  margin-right: 8px;
+  font-size: 16px; 
 }
 
-/* Cambia el color de fondo al pasar el ratón por los elementos del submenú */
 .sub-menu li:hover {
   background-color: #f0f0f0;
 }
 
-/* Cambia el color del texto al pasar el ratón por los elementos del submenú */
 .sub-menu li a:hover {
-  color: #000; /* Cambia el color del texto al pasar el ratón */
+  color: #000;
 }
-
 
 .search-container {
   text-align: center;
@@ -164,7 +159,6 @@ nav ul li a {
   background-color: #59dae4;
 }
 
-/* Estilos de la pantalla modal */
 .modal {
   display: none;
   position: fixed;
@@ -173,7 +167,7 @@ nav ul li a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  background-color: rgba(0, 0, 0, 0.5); 
   overflow: auto;
 }
 
@@ -182,7 +176,7 @@ nav ul li a {
   margin: 10% auto;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
   max-width: 80%;
 }
 
@@ -203,40 +197,38 @@ nav ul li a {
 .libros-container-search {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Alinear los libros al centro */
+  justify-content: center; 
   margin-top: 20px;
 }
 
 .libro {
-  width: 200px; /* Ancho fijo para cada libro */
-  margin: 20px; /* Espacio entre los libros */
-  text-align: center; /* Centrar el texto dentro del libro */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  border-radius: 8px; /* Bordes redondeados */
-  transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+  width: 200px; 
+  margin: 20px; 
+  text-align: center; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; 
+  transition: transform 0.3s ease; 
 }
 
 .libro:hover {
-  transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+  transform: translateY(-5px); 
 }
 
 .libro img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+  border-radius: 8px 8px 0 0; 
 }
 
 .libro p {
   color: #333;
   font-size: 14px;
-  margin-top: 10px; /* Espacio entre la imagen y el texto */
+  margin-top: 10px; 
 }
-
-/* Estilos de los contenedores individuales */
 
 /* Estilos de la sección de libros nuevos */
 #libros-nuevos {
-  background-color: #f8f8f8; /* Fondo gris claro */
+  background-color: #f8f8f8; 
   border-radius: 5px;
   margin: 20px auto;
   padding: 30px;
@@ -249,7 +241,7 @@ nav ul li a {
 }
 
 #libros-nuevos {
-  background-color: #f8f8f8; /* Fondo gris claro */
+  background-color: #f8f8f8; 
   border-radius: 5px;
   margin: 20px auto;
   padding: 30px;
@@ -263,40 +255,40 @@ nav ul li a {
 
 #libros-nuevos .libros-container-nuevos {
   display: flex;
-  overflow-x: auto; /* Permitir desplazamiento horizontal */
-  -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
-  padding: 20px 0; /* Espaciado superior e inferior */
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch; 
+  padding: 20px 0; 
 }
 
 #libros-nuevos .libro {
-  width: calc(20% - 40px); /* Ancho fijo para que haya 5 libros por fila */
-  margin: 0 20px; /* Espacio entre los libros */
-  text-align: center; /* Centrar el texto dentro del libro */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  border-radius: 8px; /* Bordes redondeados */
-  transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+  width: calc(20% - 40px); 
+  margin: 0 20px; 
+  text-align: center; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; 
+  transition: transform 0.3s ease; 
 }
 
 #libros-nuevos .libro:hover {
-  transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+  transform: translateY(-5px); 
 }
 
 #libros-nuevos .libro img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+  border-radius: 8px 8px 0 0; 
 }
 
 #libros-nuevos .libro p {
   color: #333;
   font-size: 14px;
-  margin-top: 10px; /* Espacio entre la imagen y el texto */
+  margin-top: 10px; 
 }
 
 /* Estilos de la sección de libros de terror */
 
 #libros-terror {
-  background-color: #f8f8f8; /* Fondo gris claro */
+  background-color: #f8f8f8; 
   border-radius: 5px;
   margin: 20px auto;
   padding: 30px;
@@ -310,39 +302,39 @@ nav ul li a {
 
 #libros-terror .libros-container-terror {
   display: flex;
-  overflow-x: auto; /* Permitir desplazamiento horizontal */
-  -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
-  padding: 20px 0; /* Espaciado superior e inferior */
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch; 
+  padding: 20px 0; 
 }
 
 #libros-terror .libro {
-  width: calc(20% - 40px); /* Ancho fijo para que haya 5 libros por fila */
-  margin: 0 20px; /* Espacio entre los libros */
-  text-align: center; /* Centrar el texto dentro del libro */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  border-radius: 8px; /* Bordes redondeados */
-  transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+  width: calc(20% - 40px); 
+  margin: 0 20px; 
+  text-align: center; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
+  transition: transform 0.3s ease;
 }
 
 #libros-terror .libro:hover {
-  transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+  transform: translateY(-5px); 
 }
 
 #libros-terror .libro img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+  border-radius: 8px 8px 0 0; 
 }
 
 #libros-terror .libro p {
   color: #333;
   font-size: 14px;
-  margin-top: 10px; /* Espacio entre la imagen y el texto */
+  margin-top: 10px; 
 }
 
 /* Estilos de la sección de libros infantiles */
 #libros-infantiles {
-  background-color: #f8f8f8; /* Fondo gris claro */
+  background-color: #f8f8f8; 
   border-radius: 5px;
   margin: 20px auto;
   padding: 30px;
@@ -356,40 +348,40 @@ nav ul li a {
 
 #libros-infantiles .libros-container-infantiles {
   display: flex;
-  overflow-x: auto; /* Permitir desplazamiento horizontal */
-  -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
-  padding: 20px 0; /* Espaciado superior e inferior */
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch; 
+  padding: 20px 0; 
 }
 
 #libros-infantiles .libro {
-  width: calc(20% - 40px); /* Ancho fijo para que haya 5 libros por fila */
-  margin: 0 20px; /* Espacio entre los libros */
-  text-align: center; /* Centrar el texto dentro del libro */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  border-radius: 8px; /* Bordes redondeados */
-  transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+  width: calc(20% - 40px); 
+  margin: 0 20px; 
+  text-align: center; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
+  transition: transform 0.3s ease; 
 }
 
 #libros-infantiles .libro:hover {
-  transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+  transform: translateY(-5px); 
 }
 
 #libros-infantiles .libro img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+  border-radius: 8px 8px 0 0; 
 }
 
 #libros-infantiles .libro p {
   color: #333;
   font-size: 14px;
-  margin-top: 10px; /* Espacio entre la imagen y el texto */
+  margin-top: 10px; 
 }
 
 /* Estilos de libros de ciencia */
 
 #libros-ciencia {
-  background-color: #f8f8f8; /* Fondo gris claro */
+  background-color: #f8f8f8; 
   border-radius: 5px;
   margin: 20px auto;
   padding: 30px;
@@ -403,40 +395,40 @@ nav ul li a {
 
 #libros-ciencia .libros-container-ciencia {
   display: flex;
-  overflow-x: auto; /* Permitir desplazamiento horizontal */
-  -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
-  padding: 20px 0; /* Espaciado superior e inferior */
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch; 
+  padding: 20px 0; 
 }
 
 #libros-ciencia .libro {
-  width: calc(20% - 40px); /* Ancho fijo para que haya 5 libros por fila */
-  margin: 0 20px; /* Espacio entre los libros */
-  text-align: center; /* Centrar el texto dentro del libro */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  border-radius: 8px; /* Bordes redondeados */
-  transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+  width: calc(20% - 40px); 
+  margin: 0 20px; 
+  text-align: center; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; 
+  transition: transform 0.3s ease; 
 }
 
 #libros-ciencia .libro:hover {
-  transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+  transform: translateY(-5px); 
 }
 
 #libros-ciencia .libro img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+  border-radius: 8px 8px 0 0; 
 }
 
 #libros-ciencia .libro p {
   color: #333;
   font-size: 14px;
-  margin-top: 10px; /* Espacio entre la imagen y el texto */
+  margin-top: 10px; 
 }
 
 /* Estilos de libros de programacion */
 
 #libros-programacion {
-  background-color: #f8f8f8; /* Fondo gris claro */
+  background-color: #f8f8f8; 
   border-radius: 5px;
   margin: 20px auto;
   padding: 30px;
@@ -450,34 +442,34 @@ nav ul li a {
 
 #libros-programacion .libros-container-programacion {
   display: flex;
-  overflow-x: auto; /* Permitir desplazamiento horizontal */
-  -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos móviles */
-  padding: 20px 0; /* Espaciado superior e inferior */
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch; 
+  padding: 20px 0; 
 }
 
 #libros-programacion .libro {
-  width: calc(20% - 40px); /* Ancho fijo para que haya 5 libros por fila */
-  margin: 0 20px; /* Espacio entre los libros */
-  text-align: center; /* Centrar el texto dentro del libro */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  border-radius: 8px; /* Bordes redondeados */
-  transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+  width: calc(20% - 40px); 
+  margin: 0 20px; 
+  text-align: center; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
+  transition: transform 0.3s ease; 
 }
 
 #libros-programacion .libro:hover {
-  transform: translateY(-5px); /* Efecto de levantar el libro al pasar el mouse */
+  transform: translateY(-5px); 
 }
 
 #libros-programacion .libro img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+  border-radius: 8px 8px 0 0; 
 }
 
 #libros-programacion .libro p {
   color: #333;
   font-size: 14px;
-  margin-top: 10px; /* Espacio entre la imagen y el texto */
+  margin-top: 10px; 
 }
 
 /* Estilos del footer */

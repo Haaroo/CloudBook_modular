@@ -24,7 +24,7 @@ header h1 {
 }
 
 .logo {
-    width: 40px; /* Ajusta el tamaño del logo según tus necesidades */
+    width: 40px; 
     height: auto;
     margin-right: 10px;
 }
@@ -96,6 +96,6 @@ input.invalid {
 }
 
 .cloudbooks-link {
-    text-decoration: none; /* Evitar el subrayado del enlace */
-    color: inherit; /* Heredar el color del texto del padre */
+    text-decoration: none; 
+    color: inherit;
 }
