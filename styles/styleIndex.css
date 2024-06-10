@@ -101,6 +101,7 @@ nav ul li a {
   display: block;
   opacity: 1;
   transform: translateY(0);
+  left: -170px;
 }
 
 /* Estilos para los elementos del submenú */

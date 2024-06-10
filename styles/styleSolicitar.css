@@ -136,34 +136,7 @@ body {
   .sub-menu li a:hover {
     color: #000; /* Cambia el color del texto al pasar el ratón */
   }
-  
-  
-  .search-container {
-    text-align: center;
-    margin: 20px auto;
-  }
-  
-  .search-container input[type=text] {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 50%;
-    margin-right: 10px;
-  }
-  
-  .search-container button {
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    background-color: #333333;
-    color: #ffffff;
-    cursor: pointer;
-  }
-  
-  .search-container button:hover {
-    background-color: #59dae4;
-  }
-  
+
   /* Estilos de la pantalla modal */
   .modal {
     display: none;
@@ -199,98 +172,76 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
-
-/* Estilos para el icono de usuario */
-.user-menu {
-    position: relative;
-    display: inline-block;
+  
+/* Estilos para el contenedor */
+.container {
+    max-width: 700px; /* Ancho máximo reducido */
+    margin: 0 auto; /* Centrar en la página */
+    padding: 50px 0;
 }
 
-.user-menu #user-icon {
-    display: inline-block;
-    cursor: pointer;
+/* Estilos para el formulario */
+#loanForm {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px; /* Ancho máximo reducido para el formulario */
+    margin: 0 auto; /* Centrar el formulario */
 }
 
-/* Estilos para el submenú */
-.sub-menu {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    border-radius: 8px;
-    z-index: 1;
-    top: calc(100% + 10px);
-    left: 0;
-    min-width: 160px;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-/* Muestra el submenú */
-.user-menu.active .sub-menu {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Estilos para los elementos del submenú */
-.sub-menu li {
-    display: flex;
-    align-items: center;
-    transition: background-color 0.3s ease;
-}
-
-.sub-menu li a {
-    display: flex;
-    align-items: center;
-    padding: 12px 16px;
-    text-decoration: none;
+/* Estilo para el título */
+#loanForm h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
     color: #333;
-    transition: background-color 0.3s ease;
-    flex: 1;
-}
-
-/* Estilos para los iconos en el submenú */
-.sub-menu li a i {
-    margin-right: 8px;
-    font-size: 16px;
-}
-
-/* Cambia el color de fondo al pasar el ratón por los elementos del submenú */
-.sub-menu li:hover {
-    background-color: #f0f0f0;
-}
-
-/* Cambia el color del texto al pasar el ratón por los elementos del submenú */
-.sub-menu li a:hover {
-    color: #000;
-}
-
-/* Sección de introducción */
-#introduccion {
-    background-color: #ffffff;
-    padding: 15px;
     text-align: center;
+}
+
+/* Estilo para las etiquetas */
+#loanForm label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Estilo para los campos de entrada */
+#loanForm input[type="text"],
+#loanForm input[type="number"],
+#loanForm textarea,
+#loanForm input[type="date"],
+#loanForm input[type="checkbox"],
+#loanForm input[type="submit"] {
+    width: calc(100% - 10px); /* Ancho del formulario menos el padding */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    margin: 20px auto;
-    max-width: 1225px;
+    box-sizing: border-box;
 }
 
-#introduccion h2 {
-    color: #333333;
-    margin-bottom: 10px;
+/* Estilo para el botón */
+#loanForm input[type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#introduccion p {
-    color: #666666;
-    font-size: 14px;
-    line-height: 1.5;
+#loanForm input[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
-footer {
+
+  /* Estilos del footer */
+  footer {
     background-color: #333333;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
-}
+  }
+  

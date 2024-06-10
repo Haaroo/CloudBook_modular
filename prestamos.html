@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblioteca</title>
-    <link rel="stylesheet" href="styles/stylePerfil.css">
+    <title>Información del Libro Solicitado</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylePrestamos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="header-content">
-          <img src="image/logo2.png" alt="Logo" class="logo">
-          <a href="inicio.html" class="cloudbooks-link"><h1>CloudBooks</h1></a>
+            <img src="image/logo2.png" alt="Logo" class="logo">
+            <a href="inicio.html" class="cloudbooks-link"><h1>CloudBooks</h1></a>
         </div>
         <nav>
             <ul>
@@ -30,17 +30,17 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="introduccion">
-            <h2>Perfil</h2>
-            <p>Nombre: Juan Pérez</p>
-            <p>Email: juan@example.com</p>
-            <p>País: México</p>
-        </section>
-    </main>
+
+    <div class="container">
+        <h1>Información del Libro Solicitado</h1>
+        <div class="loan-info" id="loanInfo">
+            <!-- La información del préstamo se cargará aquí -->
+        </div>
+    </div>    
     <footer>
-        <p>&copy; 2024 Información de Cuenta</p>
+        <p>&copy; 2024 CloudBooks. Todos los derechos reservados.</p>
     </footer>
+    <script src="js/Prestamos.js"></script>
     <script src="js/perfil.js"></script>
 </body>
 </html>
