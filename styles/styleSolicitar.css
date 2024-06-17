@@ -202,7 +202,6 @@ body {
 #loanForm input[type="text"],
 #loanForm input[type="number"],
 #loanForm textarea,
-#loanForm input[type="date"],
 #loanForm input[type="checkbox"],
 #loanForm input[type="submit"] {
     width: calc(100% - 10px); 
